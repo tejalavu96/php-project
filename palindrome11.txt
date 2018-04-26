@@ -1,0 +1,27 @@
+<?php
+$p=$_GET['lower'];
+$q=$_GET['upper'];
+while($p<=$q)
+{
+    $k=$p;
+    $rem=0;
+    $rev=0;
+    while($k>0)
+    {
+        $rem=$k%10;
+        $k=$k/l0;
+        $rev=($rev*10)+$rem;
+    }
+    if($p==$rev)
+    {
+        echo $p;
+    }
+    $p=$p+1;
+}
+?>
+
+<form>
+enter lower limit <input type="number"name='lower'/>;
+    enter upper limit <input type="number"name='upper'/>;
+<input type="submit"values="check result"/>
+    </form>

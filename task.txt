@@ -1,0 +1,36 @@
+<?php
+$x=$_POST['llimit'];
+$y=$_POST['ulimit'];
+for(i=$x;i<=$y;i++)
+{
+echo "<br>";
+$num=$i;
+$sum=$sum*10+$i%10;
+
+$num=$num/10;
+if($sum==$i)
+   echo $i." is a palindrome number");
+}
+?>
+<html>
+<head>
+  <title>
+     palindromes within limits
+  </title>
+ </head>
+<body>
+<h2>enter numbers here</h2>
+<form action="task.php" method="POST">
+ </br>
+   <h2>lower limit</h2>
+    <input type="number" name='llimit'>
+ </br>
+   <h2>upper limit</h2>
+    <input type="number" name='ulimit'>
+  </br>
+   <button type="submit">submit</button>
+</form>
+ </body>
+</html>
+   
+        
